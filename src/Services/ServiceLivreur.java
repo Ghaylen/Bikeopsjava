@@ -73,11 +73,11 @@ public class ServiceLivreur {
         }
 
     }
-    public void DeleteClasse(Livreur cl) {
+    public void DeleteClasse(Livreur l) {
         try {
-            String requete = "delete from classes where ? = id";
+            String requete = "delete from livreur where ? = id";
             PreparedStatement pst = conx.prepareStatement(requete);
-            pst.setInt(1, cl.getId());
+            pst.setInt(1, l.getId());
             pst.executeUpdate();
             System.out.println("Livreur Deleted !!!!");
         } catch (SQLException ex) {

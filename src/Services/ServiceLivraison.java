@@ -26,18 +26,19 @@ public class ServiceLivraison {
     }
     public void addlivraison(Livraison c) {
         try {
-            String requete = "insert into livraison (etat,adresse,livreurid,ville,type) values(?,?,?,?,?)";
+            String requete = "insert into livraison (id,etat,adresse,livreurid,ville,type) values(?,?,?,?,?,?)";
             PreparedStatement pst = conx.prepareStatement(requete);
-            pst.setBoolean(1, c.getEtat());
-            pst.setString(2, c.getAdress());
-            pst.setInt(3, c.getLivreurid());
-            pst.setString(4, c.getVille());
+            pst.setInt(1, c.getId());
+            pst.setBoolean(2, c.getEtat());
+            pst.setString(3, c.getAdress());
+            pst.setInt(4, c.getLivreurid());
+            pst.setString(5, c.getVille());
            // pst.setInt(5, c.getCommande_id());
-            pst.setString(5, c.getType());
+            pst.setString(6, c.getType());
             pst.executeUpdate();
             System.out.println("Livraison added !!!!");
         } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
+            System.out.println(ex.getMessage());   
         }
     }
     public List<Livraison> ListLivraison() {

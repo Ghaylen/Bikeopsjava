@@ -47,6 +47,8 @@ public class Livreur {
         this.etat = etat;
     }
 
+   
+
     public Livreur(int id, String nom, String prenom, boolean etat) {
         this.id = id;
         this.nom = nom;

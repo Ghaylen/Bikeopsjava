@@ -24,10 +24,11 @@ public class BikeOps {
         ConnexionBD conx = ConnexionBD.getinstance();
         Livreur l = new Livreur(0, "gh", "bf", true);
         ServiceLivreur L = new ServiceLivreur();
-        L.addClass(l);
+        L.DeleteClasse(l);
         Livraison li = new Livraison(66, Boolean.TRUE, "mourouj", 5, "BenArous", 0, "zzzz");
         ServiceLivraison LI = new ServiceLivraison();
         LI.addlivraison(li);
+        
 
     }
 }

@@ -20,7 +20,6 @@ public class Livraison {
 
     public Livraison() {
     }
-
     public Livraison(int id, Boolean etat, String adresse, int livreurid, String ville, int commande_id, String type) {
         this.id = id;
         this.etat = etat;
@@ -29,6 +28,10 @@ public class Livraison {
         this.ville = ville;
         this.commande_id = commande_id;
         this.type = type;
+    }
+
+    public Livraison(int id, boolean etat, String adresse, int livreurid, String ville) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

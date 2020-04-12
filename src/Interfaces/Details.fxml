@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.DetailsController">
+   <children>
+      <Label layoutX="39.0" layoutY="140.0" text="id" />
+      <Label layoutX="39.0" layoutY="226.0" text="nom" />
+      <Label layoutX="322.0" layoutY="140.0" text="prenom" />
+      <Label layoutX="322.0" layoutY="237.0" text="etat" />
+      <Label layoutX="188.0" layoutY="38.0" text="Details Livreur">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfid2" layoutX="94.0" layoutY="135.0" />
+      <TextField fx:id="tfnom2" layoutX="94.0" layoutY="221.0" />
+      <TextField fx:id="tfprenom2" layoutX="379.0" layoutY="135.0" />
+      <TextField fx:id="tfetat2" layoutX="379.0" layoutY="232.0" />
+   </children>
+</AnchorPane>
